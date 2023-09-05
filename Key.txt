@@ -1,0 +1,246 @@
+84CX60954251BCP4M8CM  JIZE680204HDFMRD02 J3tt42017
+
+3VWKP6BU1LM090586
+
+2222005822
+Acac1212.
+
+---------------------------------------------LINKSWORK---------------------------------------------
+Benefits App:
+https://appbenefits.azurewebsites.net/
+https://benefits-ge.azurewebsites.net/
+
+CORREO: 
+https://188.92.180.107.host.secureserver.net:2096/webmaillogout.cgi
+https://188.92.180.107.host.secureserver.net:2096/webmaillogout.cgi
+Ssßß
+hebergp90@gmail.com
+hjimenez@fiscalsharks.org
+a#TtkQf#Yug,
+6kPxvYdes$
+
+jesusaizacontador@gmail.com
+Apps.*2023:)
+
+acarom@grupoestrategia.mx
+Acac1212.
+
+FINANCIAL: 
+https://financial-dm.azurewebsites.net/
+
+MESADEAYUDA: 
+https://helpgrupoestrategia.ddns.net/es/Cliente/create-ticket/
+
+Estr@t3g14 / 8a0ab307-6eed-49b6-b3ad-26cf95ec0bdc
+
+
+soporte2sanmia@gmail.com
+S4nm14gruppe
+*************************************************************************************************
+https://portal.azure.com/#home
+
+Source= fin001a5rs9bhtew4u.database.windows.net
+ID= AdminFinancial
+Password= km2QjsmU5Ay872EEHzb
+
+Source= ben3a5rs9bhtew4u.database.windows.net
+ID= AdminBenefits
+Password= 67afeZLvNukDJct9k4xw
+
+Source= appben3a5rs9bhtew4u.database.windows.net
+ID= AdminAppBenefits
+Password= 67afeZLvNukDJct9k4xw
+
+*************************************************************************************************
+
+--------------------------------------------------------------------------------------------------
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDccDYg2SBCFnTADbtYfCUbibXsGWCpgIBkQLYgQO68Zo23S7UB1xrty6dAHI0b6aUK9tjQP8UboTywZ/aCTLGLZZJgu7NkhD76+EBTprwL6Ni8hropml1oByCrucgv0paF8z/y8q/jea09rG9t/4QPRTt4ql2Sf4w3mVJ/i5UaAApa32hwcDb6gqEmGLwfYI7k4dncvSSHvTuWlo+isnG86W6uv/eRQWcRkZQGF/OXGP4eWA94cruyDBIPxVSBATEileiAsYkGgtCdzPoFqOFTh8Xnee7e5D+yuvfGUSKh8phG9QA9z+v6M5ffM7MgwjWo3Ig4CrVmmXON+FxdqZr7TnjyjUOe2tifJii6zqRzsiUDSCZ8+H9rUOG3nFEzyTdBbU24c3bo8iLoAG/760JqwBaHdRe/YJiAAY0UrAilcLuefKoiN+X9ELIWt9M4WkbqVY2kcZK+MqGlT0P7lXRPF7GaGxVwsKOK5dR07qXYDycQyoUoydWGjnctyDy0YpMDPNbxXPWP9B3od6WFw9DCjBwZD+bbHt4oWl7dKNXCWBcJAYAB3d8Q8Avlpd65AL0Afknq8o5Yg0Gb+k1CBw86D3O2IfWfF8HRhUebNUQq9eCtAjZwlRQAd/7DBo/cSYRzqJrDr32E0rAlN18DgNxljDEPxLCPY1ORFiEVEpdVhw== hjimenez@fiscalsharks.org
+
+--------------------------------------------------------------------------------------------------
+
+.gitignore
+
+# Xcode
+#
+# gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
+
+## User settings
+xcuserdata/
+
+## compatibility with Xcode 8 and earlier (ignoring not required starting Xcode 9)
+*.xcscmblueprint
+*.xccheckout
+
+## compatibility with Xcode 3 and earlier (ignoring not required starting Xcode 4)
+build/
+DerivedData/
+*.moved-aside
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+
+## Obj-C/Swift specific
+*.hmap
+
+## App packaging
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+## Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+# Swift Package Manager
+#
+# Add this line if you want to avoid checking in source code from Swift Package Manager dependencies.
+# Packages/
+# Package.pins
+# Package.resolved
+# *.xcodeproj
+#
+# Xcode automatically generates this directory with a .xcworkspacedata file and xcuserdata
+# hence it is not needed unless you have added a package configuration file to your project
+# .swiftpm
+
+.build/
+
+# CocoaPods
+#
+# We recommend against adding the Pods directory to your .gitignore. However
+# you should judge for yourself, the pros and cons are mentioned at:
+# https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
+#
+# Pods/
+#
+# Add this line if you want to avoid checking in source code from the Xcode workspace
+# *.xcworkspace
+
+# Carthage
+#
+# Add this line if you want to avoid checking in source code from Carthage dependencies.
+# Carthage/Checkouts
+
+Carthage/Build/
+
+# Accio dependency management
+Dependencies/
+.accio/
+
+# fastlane
+#
+# It is recommended to not store the screenshots in the git repo.
+# Instead, use fastlane to re-generate the screenshots whenever they are needed.
+# For more information about the recommended setup visit:
+# https://docs.fastlane.tools/best-practices/source-control/#source-control
+
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+
+# Code Injection
+#
+# After new code Injection tools there's a generated folder /iOSInjectionProject
+# https://github.com/johnno1962/injectionforxcode
+
+iOSInjectionProject/
+
+.DS_Store
+
+.vscode/
+-----------------------------------------------------------------------------------------------------
+
+Términos y condiciones
+
+Restricciones de taquilla de Lunes a Domingo:
+
+•	Sujeto a disponibilidad de sala y clasificación de película.
+•	Válido sólo en el tipo de conjunto correspondiente.
+•	Prohibida su reventa.
+•	No acumulable con otras promociones.
+•	Folio electrónico no es válido en Cinépolis VIP, 3D, 4DX, Macro XE, IMAX, Cinépolis Plus, Sala Junior o Cinema Park.
+•	El beneficio lo posee el portador del folio y es válido una sola vez.
+•	Válido de Lunes a Domingo.
+•	No aplica con otras promociones. 
+•	No aplica en premieres, funciones especiales o contenido alternativo. 
+•	No aplica en reservaciones por Cineticket o venta avanzada. 
+•	Los boletos caducan en la fecha de su vigencia. Después de esa fecha, los boletos ya no podrán ser redimidos.
+•	El cine se reserva el derecho de cambiar las películas y horarios sin previo aviso.
+•	El folio se canjea directamente en la taquilla del Cinépolis de preferencia, debes llevar el número de folio y proporcionarlo, de manera verbal o escrita, para que el cinepolito lo cambie por el boleto para la película y horario de la función aplicable.
+
+
+
+
+
+
+
+
+
+Red Médica
+Asistencia Funeraria
+Seguro Muerte Accidental
+Asistencia hospitalaria
+Asistencia Telefónica
+Pérdida de Miembros
+Asesoría Nutricional
+Asistencia Emocional
+Medicamentos con precio preferencial 
+Envío de ambulancia 
+Envío de médico a domicilio
+Servicio de Concierge Médico
+CHECK UP GRATUITO
+Videoconsulta y consultas de especialidad
+
+
+
+EMPRESA	PAGINA WEB	MEDIOCONTACTO	
+			
+Solucion Fcatible Consultores	https://solucionfactible.com/	portalweb	$0.40 pesos mas IVA
+STO Consulting 	https://www.stoconsulting.com/stoconsultingcom/	portalweb	$0.10 pesos mas IVA
+			
+			
+Solve Tax For Good	https://www.sovos.com/mx/	portalweb	enviara correo
+Quadrum cfdi	https://cfdiquadrum.com.mx/	portalweb	enviara correo
+Diversa	https://www.diverza.com/soluciones/timbre-fiscal/	portalweb	$0.23
+
+
+
+CATALOGOS
+https://dev-tarjetadigital.azurewebsites.net/api/catalogos/estados
+MUNICIPIOS
+https://dev-tarjetadigital.azurewebsites.net/api/catalogos/municipios/{idEstado}
+CIUDADES
+https://dev-tarjetadigital.azurewebsites.net/api/catalogos/ciudades/{idEstado}
+GIROS
+https://dev-tarjetadigital.azurewebsites.net/api/catalogos/giros
+GIRO POR ESTADO Y TIPO BENEFICIO
+https://dev-tarjetadigital.azurewebsites.net/api/catalogos/giros/{idapp}/idapp/{idestado}/estado/{idtipobeneficio}/idtipobeneficio
+TIPOS DE BENEFICIO
+https://dev-tarjetadigital.azurewebsites.net/api/catalogos/tipobeneficio
+BENEFICIO
+https://dev-tarjetadigital.azurewebsites.net/api/beneficio/{idapp}/idapp/{idbeneficio}
+COMERCIOS
+https://dev-tarjetadigital.azurewebsites.net/
+https://dev-tarjetadigital.azurewebsites.net/
+https://dev-tarjetadigital.azurewebsites.net/
+https://dev-tarjetadigital.azurewebsites.net/
+https://dev-tarjetadigital.azurewebsites.net/
+https://dev-tarjetadigital.azurewebsites.net/
+
+http://tdushots.blob.core.windows.net
+
+2222005822
+
+=A4&D4 
+
+=BUSCARV(A4,[Archivo2.xlsx]Gastos!$A:$A, 1, FALSO)
+
+
+
+CINCO H INGENIERIA Y TERRACERIAS

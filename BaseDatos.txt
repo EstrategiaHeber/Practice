@@ -1,0 +1,140 @@
+Azure Data Studio - SCRIPTS ALAN
+
+
+--> Insertar
+
+Insert into EmpresasRc (NombreComercial, Logo, Activa) Values ('MVERM SPA', '237 MVERM SPA.png', 1)
+
+--> Eliminar
+
+delete from sucursalesrcnw 
+
+--> Buscar
+
+SELECT * from Empleados WHERE Nombre LIKE 'Heber'
+SELECT * from Empleados WHERE Nombre LIKE '%alan%'
+
+--> Borrar
+--Delete from Empleados WHERE IdEmpleado = '57f0232b-0804-4041-8075-4ce5a142d56b'
+
+--> Actualizar 
+Update "nombreTabla" 
+
+
+--> Buscar todo de una tabla utilizando where y ordenamiento
+
+SELECT TOP (1000) [IdBoleto]
+      ,[IdBoletoCineCompra]
+      ,[Folio]
+      ,[Img]
+      ,[VigenciaIni]
+      ,[VigenciaFin]
+      ,[Asignado]
+      ,[IdEmpleado]
+      ,[FechaSolicitud]
+      ,[VencimientoEmpleado]
+  FROM [dbo].[BoletosCine] WHERE Asignado = 1 ORDER by IdEmpleado
+
+--> Saber quien y cuantos boletos de cine tienen
+
+Select BoletosCine.Folio, BoletosCine.FechaSolicitud, e.Nombre, e.ApellidoPaterno from BoletosCine 
+inner join Empleados e on e.IdEmpleado=BoletosCine.IdEmpleado
+where Asignado=1
+order by e.Nombre
+
+--> Para saber si existe algun duplicado
+
+- Ej.1
+SELECT Identificador, COUNT(*) AS cantidad
+FROM Empleados
+GROUP BY Identificador
+HAVING COUNT(*) > 1;
+
+- Ej.2
+SELECT
+    COUNT(*)
+FROM
+    Nominas
+GROUP BY
+    IdNomina
+HAVING 
+    COUNT(*) > 1
+
+--> Para unir varias tablas y brinde un valor en especifico 
+
+-- Consulta Join que combina las filas de las tablas Empleados y Empresas
+-- Basandose en la condicion de que el id de la sucursal en la tabla empresa sea igual al id de la sucursal de la tabla Sucursales
+
+-- La fila Sucursal de la tabla Sucursales y la fila Empresa de la Tabla Empresas se uniran a la tabla Empleados
+Select E.*, S.Sucursal, emp.Empresa from Empleados E
+-- Condicion de union ( )
+Join Sucursales S on E.IdSucursal=S.IdSucursal
+-- Condicion de union
+Join Empresas emp on S.IdEmpresa=emp.IdEmpresa
+Where Identificador is null
+
+
+
+
+
+-----------------------------------------------------------------------------------------------------
+
+
+-**Definiendo cómo es almacenada la información**-
+CREATE DATABASE => se utiliza para crear una nueva base de datos vacía.
+DROP DATABASE => se utiliza para eliminar completamente una base de datos existente.
+CREATE TABLE => se utiliza para crear una nueva tabla, donde la información se almacena realmente.
+ALTER TABLE => se utiliza para modificar una tabla ya existente.
+DROP TABLE => se utiliza para eliminar por completo una tabla existente.
+
+-**Manipulando los datos**-
+SELECT => se utiliza cuando quieres leer (o seleccionar) tus datos.
+INSERT => se utiliza cuando quieres añadir (o insertar) nuevos datos.
+UPDATE => se utiliza cuando quieres cambiar (o actualizar) datos existentes.
+DELETE => se utiliza cuando quieres eliminar (o borrar) datos existentes.
+REPLACE => se utiliza cuando quieres añadir o cambiar (o reemplazar) datos nuevos o ya existentes.
+TRUNCATE => se utiliza cuando quieres vaciar (o borrar) todos los datos de la plantilla.
+
+-**EJEMPLO**-
+CREATE DATABASE mydb;
+USE mydb;
+CREATE TABLE mitabla ( id INT PRIMARY KEY, nombre VARCHAR(20) );
+INSERT INTO mitabla VALUES ( 1, 'Will' );
+INSERT INTO mitabla VALUES ( 2, 'Marry' );
+INSERT INTO mitabla VALUES ( 3, 'Dean' );
+SELECT id, nombre FROM mitabla WHERE id = 1;
+UPDATE mitabla SET nombre = 'Willy' WHERE id = 1;
+SELECT id, nombre FROM mitabla;
+DELETE FROM mitabla WHERE id = 1;
+SELECT id, nombre FROM mitabla;
+DROP DATABASE mydb;
+SELECT count(1) from mitabla; da el número de registros en la tabla
+
+-**LINK AYUDA**-
+
+https://www.ionos.mx/digitalguide/servidores/configuracion/comandos-sql/
+
+
+
+
+
+insert into SucursalesRCnw (IdEmpresaRC, Sucursal, Direccion, Estado, Municipio, Latitud, Longitud, Tel1, Tel2, WhatsApp, Horarios, Activa ,FUA ,IdCodigo) VALUES (91, 'DESÉRTIKA SPA', '', 'CIUDAD DE MEXICO', 'BENITO JUAREZ', 19.3956539, -99.1708881, '', '', '', '', 1, '2021-01-01', 'TDC 1')
+
+="insert into SucursalesRCnw (IdEmpresaRC, Sucursal, Direccion, Estado, Municipio, Latitud, Longitud, Tel1, Tel2, WhatsApp, Horarios, Activa ,FUA ,IdCodigo) VALUES (" &B2&", '" &C2&"', '"&D2&"', '"&E2&"', '"&F2&"', "&G2&", "&H2&", '"&I2&"', '"&J2&"', '"&K2&"', '"&L2&"', "&M2&", '"&N2&"', '"&O2&"')"
+
+="insert into BoletosCineCompra (IdProveedor, FechaCompra, Cantidad, Importe, ModificadoPor, FechaModificacion, Recibidos, FechaRecibo) VALUES (" &B3&", '" &C3&"', "&D3&", "&E3&", "&F3&", '"&G3&"', "&H3&", '"&I3&"')"
+
+="insert into BoletosCine (IdBoletoCineCompra, Folio, Img, VigenciaIni, VigenciaFin, Asignado) VALUES ("&B2&", '" &C2&"', '"&D2&"', '"&E2&"', '"&F2&"', "&G2&")"
+
+IdBoleto	IdBoletoCineCompra	Folio	Img	VigenciaIni	VigenciaFin	Asignado	IdEmpleado	FechaSolicitud	VencimientoEmpleado
+   6	              1	           479968K8C5GE4EZB.     2023-04-14	2023-07-14	   1	        72f6e2f3-d836-4246-aa62-dd274b9876f9	2023-05-26	NULL
+
+
+
+
+
+
+
+
+
+
