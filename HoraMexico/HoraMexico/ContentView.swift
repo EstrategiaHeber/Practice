@@ -98,14 +98,20 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
+            Text("Hora CDMX")
             Text(getTimeInMexico())
-                .font(.largeTitle)
-
+                .bold()
+            
+            Text("Hora EU")
             Text(getTimeInEU())
-                .font(.largeTitle)
+                .bold()
+            
+            Text("Hora HERMOSILLO")
+            Text(getTimeInHermosillo())
+                .bold()
 
             Text(String(getToken()))
-                .font(.largeTitle)
+                .bold()
         }
     }
 
@@ -129,7 +135,38 @@ struct ContentView: View {
             let minutes = calendar.component(.minute, from: date)
             let seconds = calendar.component(.second, from: date)
             
-            print("LA HORA DE MEXICO ES: \(date.description)")
+            print("LA HORA DE CIUDAD DE MEXICO ES: \(date.description)")
+            print("Dia:", days)
+            print("Mes:", month)
+            print("Hora:", hour)
+            print("Minutos:", minutes)
+            print("Segundos:", seconds)
+        }
+        
+        return mexicoTime
+    }
+    
+    func getTimeInHermosillo() -> String {
+
+        let dateFormatter = DateFormatter()
+        dateFormatter.timeZone = TimeZone(identifier: "America/Hermosillo")
+        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss" //"HH:mm:ss"
+
+        let mexicoDate = Date()
+        let mexicoTime = dateFormatter.string(from: mexicoDate)
+        
+        let dateFormattte = DateFormatter()
+        dateFormattte.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        
+        if let date = dateFormattte.date(from: mexicoTime) {
+            let calendar = Calendar.current
+            let hour = calendar.component(.hour, from: date)
+            let days = calendar.component(.day, from: date)
+            let month = calendar.component(.month, from: date)
+            let minutes = calendar.component(.minute, from: date)
+            let seconds = calendar.component(.second, from: date)
+            
+            print("LA HORA DE HERMOSILLO SONORA ES: \(date.description)")
             print("Dia:", days)
             print("Mes:", month)
             print("Hora:", hour)

@@ -176,65 +176,6 @@ Restricciones de taquilla de Lunes a Domingo:
 
 
 
-
-
-
-
-
-
-Red Médica
-Asistencia Funeraria
-Seguro Muerte Accidental
-Asistencia hospitalaria
-Asistencia Telefónica
-Pérdida de Miembros
-Asesoría Nutricional
-Asistencia Emocional
-Medicamentos con precio preferencial 
-Envío de ambulancia 
-Envío de médico a domicilio
-Servicio de Concierge Médico
-CHECK UP GRATUITO
-Videoconsulta y consultas de especialidad
-
-
-
-EMPRESA	PAGINA WEB	MEDIOCONTACTO	
-			
-Solucion Fcatible Consultores	https://solucionfactible.com/	portalweb	$0.40 pesos mas IVA
-STO Consulting 	https://www.stoconsulting.com/stoconsultingcom/	portalweb	$0.10 pesos mas IVA
-			
-			
-Solve Tax For Good	https://www.sovos.com/mx/	portalweb	enviara correo
-Quadrum cfdi	https://cfdiquadrum.com.mx/	portalweb	enviara correo
-Diversa	https://www.diverza.com/soluciones/timbre-fiscal/	portalweb	$0.23
-
-
-
-CATALOGOS
-https://dev-tarjetadigital.azurewebsites.net/api/catalogos/estados
-MUNICIPIOS
-https://dev-tarjetadigital.azurewebsites.net/api/catalogos/municipios/{idEstado}
-CIUDADES
-https://dev-tarjetadigital.azurewebsites.net/api/catalogos/ciudades/{idEstado}
-GIROS
-https://dev-tarjetadigital.azurewebsites.net/api/catalogos/giros
-GIRO POR ESTADO Y TIPO BENEFICIO
-https://dev-tarjetadigital.azurewebsites.net/api/catalogos/giros/{idapp}/idapp/{idestado}/estado/{idtipobeneficio}/idtipobeneficio
-TIPOS DE BENEFICIO
-https://dev-tarjetadigital.azurewebsites.net/api/catalogos/tipobeneficio
-BENEFICIO
-https://dev-tarjetadigital.azurewebsites.net/api/beneficio/{idapp}/idapp/{idbeneficio}
-COMERCIOS
-https://dev-tarjetadigital.azurewebsites.net/
-https://dev-tarjetadigital.azurewebsites.net/
-https://dev-tarjetadigital.azurewebsites.net/
-https://dev-tarjetadigital.azurewebsites.net/
-https://dev-tarjetadigital.azurewebsites.net/
-https://dev-tarjetadigital.azurewebsites.net/
-
-http://tdushots.blob.core.windows.net
-
 2222005822
 
 =A4&D4 
