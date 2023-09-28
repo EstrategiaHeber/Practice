@@ -14,6 +14,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F38AB46B2AB38968000C87CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		F3A70F102AA793AD0025DE9D /* NavigatinLinkAction.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavigatinLinkAction.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3A70F132AA793AD0025DE9D /* NavigatinLinkActionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigatinLinkActionApp.swift; sourceTree = "<group>"; };
 		F3A70F152AA793AD0025DE9D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,6 +52,7 @@
 		F3A70F122AA793AD0025DE9D /* NavigatinLinkAction */ = {
 			isa = PBXGroup;
 			children = (
+				F38AB46B2AB38968000C87CD /* Info.plist */,
 				F3A70F132AA793AD0025DE9D /* NavigatinLinkActionApp.swift */,
 				F3A70F152AA793AD0025DE9D /* ContentView.swift */,
 				F3A70F172AA793AF0025DE9D /* Assets.xcassets */,
@@ -270,11 +272,13 @@
 				DEVELOPMENT_TEAM = S7JA3N9NV4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NavigatinLinkAction/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -299,11 +303,13 @@
 				DEVELOPMENT_TEAM = S7JA3N9NV4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NavigatinLinkAction/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

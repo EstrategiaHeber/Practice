@@ -185,3 +185,11 @@ Restricciones de taquilla de Lunes a Domingo:
 
 
 CINCO H INGENIERIA Y TERRACERIAS
+
+--------------------------------------
+
+INTERNET TRABAJO
+Could not connect to the server.
+
+NO INTERNET
+A data connection is not currently allowed.
