@@ -1,0 +1,39 @@
+[submodule "proyectos_equipos_5x/ProyectoNominApp"]
+	path = proyectos_equipos_5x/ProyectoNominApp
+	url = https://github.com/JoelBrayan22/ProyectoAdministracionDeNominasEmpleados
+[submodule "proyectos_equipos_6x/BitacorAPP"]
+	path = proyectos_equipos_6x/BitacorAPP
+	url = https://github.com/BrianJM21/BitacorAPP
+[submodule "proyectos_equipos_6x/Ubicapp"]
+	path = proyectos_equipos_6x/Ubicapp
+	url = https://github.com/JoelBrayan22/Ubicapp
+[submodule "codigos_7x/MusicApp"]
+	path = codigos_7x/MusicApp
+	url = https://github.com/HeberJR11/Musicapp
+[submodule "Proyectos_Equipo_7x/MusicApp"]
+	path = Proyectos_Equipo_7x/MusicApp
+	url = https://github.com/HeberJR11/Musicapp
+[submodule "proyectos_equipos_7x/MusicApp"]
+	path = proyectos_equipos_7x/MusicApp
+	url = https://github.com/HeberJR11/Musicapp
+[submodule "proyectos_equipos_8x/myDailyDiet"]
+	path = proyectos_equipos_8x/myDailyDiet
+	url = https://gitlab.com/joelnavorjimenez/mydailydiet
+[submodule "proyectos_equipos_8x/MyCaloriAPP"]
+	path = proyectos_equipos_8x/MyCaloriAPP
+	url = https://github.com/BrianJM21/MyCaloriAPP.git
+[submodule "proyectos_equipos_9x/UserLoginViper"]
+	path = proyectos_equipos_9x/UserLoginViper
+	url = https://github.com/JoelBrayan22/UserLoginViper.git
+[submodule "proyectos_equipos_9x/HomeModule"]
+	path = proyectos_equipos_9x/HomeModule
+	url = https://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@github.com/BrianJM21/HomeModule.git
+[submodule "proyectos_equipos_9x/ProfileModule"]
+	path = proyectos_equipos_9x/ProfileModule
+	url = git@github.com:batista-eduardo-mat/ProfileModule.git
+[submodule "proyectos_equipos_9x/UserAuthSubmodule"]
+	path = proyectos_equipos_9x/UserAuthSubmodule
+	url = https://github.com/JoelBrayan22/UserLoginViper
+[submodule "proyectos_equipos_9x/DetailsModule"]
+	path = proyectos_equipos_9x/DetailsModule
+	url = git@github.com:HeberJR11/iOSTraining.git
