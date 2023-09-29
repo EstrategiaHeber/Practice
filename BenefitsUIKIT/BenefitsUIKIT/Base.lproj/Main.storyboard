@@ -50,7 +50,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Iniciar Sésion"/>
                                 <connections>
-                                    <segue destination="ljW-QQ-qAh" kind="show" identifier="goToIniciarSesionVIew" id="tcl-k3-3hu"/>
+                                    <segue destination="ljW-QQ-qAh" kind="presentation" identifier="goToIniciarSesionVIew" modalPresentationStyle="overFullScreen" id="tcl-k3-3hu"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kfS-yb-Bk4">
@@ -87,16 +87,29 @@
             <objects>
                 <viewController id="ljW-QQ-qAh" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eaX-o7-o5s">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cintillo 2" translatesAutoresizingMaskIntoConstraints="NO" id="Kzs-1D-PmC">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="G8c-Jc-QYP"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Ks9-W2-G5V"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Kzs-1D-PmC" firstAttribute="leading" secondItem="Ks9-W2-G5V" secondAttribute="leading" id="Ngr-BN-ytS"/>
+                            <constraint firstItem="Kzs-1D-PmC" firstAttribute="top" secondItem="eaX-o7-o5s" secondAttribute="top" id="Tmt-OS-InB"/>
+                            <constraint firstItem="Ks9-W2-G5V" firstAttribute="trailing" secondItem="Kzs-1D-PmC" secondAttribute="trailing" id="rVq-AV-eAy"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="8D4-Qu-dFX"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ulz-vA-bCl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="674" y="18"/>
+            <point key="canvasLocation" x="753" y="4"/>
         </scene>
     </scenes>
     <resources>
@@ -105,7 +118,7 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray2Color">
-            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
