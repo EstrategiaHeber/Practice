@@ -1,2 +1,9 @@
 --> DOCUMENTACION DE SWIFT
 https://docs.swift.org/swift-book/documentation/the-swift-programming-language/stringsandcharacters
+
+
+698cb29c0a1e70d1a30a0a9982f6a95a
+
+https://api.openweathermap.org/data/2.5/weather?appid=698cb29c0a1e70d1a30a0a9982f6a95a&units=metric&long=es&q=brasil
+
+fluffy.es/3-ways-to-pass-data-between-view-controllers/

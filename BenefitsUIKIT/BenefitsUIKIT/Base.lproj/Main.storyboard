@@ -16,65 +16,72 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cintillo 2" translatesAutoresizingMaskIntoConstraints="NO" id="aLa-SO-3TQ">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="250"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="250" id="hb8-Pt-S5l"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Registro" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Dt-ev-aha">
-                                <rect key="frame" x="152" y="260" width="89.333333333333314" height="24.666666666666686"/>
-                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Número celular" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dnd-Yl-48x">
-                                <rect key="frame" x="96.666666666666686" y="309.66666666666669" width="200" height="34"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="Dle-6N-Yp1"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*Debe utilizar el número de celular que proporcionó al área de RRHH de su empresa." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="za4-iS-dFq">
-                                <rect key="frame" x="46.666666666666657" y="368.66666666666669" width="300" height="61"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="XIb-QY-CPo"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" systemColor="systemGray2Color"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FCd-57-mTG">
-                                <rect key="frame" x="134" y="524.66666666666663" width="125" height="35"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Iniciar Sésion"/>
-                                <connections>
-                                    <segue destination="ljW-QQ-qAh" kind="presentation" identifier="goToIniciarSesionVIew" modalPresentationStyle="overFullScreen" id="tcl-k3-3hu"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kfS-yb-Bk4">
-                                <rect key="frame" x="150" y="459.66666666666669" width="93" height="35"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Registrar"/>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="vFp-4R-Xrm">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="536"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cintillo 2" translatesAutoresizingMaskIntoConstraints="NO" id="aLa-SO-3TQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="250"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="250" id="hb8-Pt-S5l"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Registro" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Dt-ev-aha">
+                                        <rect key="frame" x="152" y="255" width="89.333333333333314" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="ghg-hB-eqY"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Número celular" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dnd-Yl-48x">
+                                        <rect key="frame" x="96.666666666666686" y="310" width="200" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="Dle-6N-Yp1"/>
+                                            <constraint firstAttribute="height" constant="50" id="QZ8-Qg-Ith"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*Debe utilizar el número de celular que proporcionó al área de RRHH de su empresa." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="za4-iS-dFq">
+                                        <rect key="frame" x="46.666666666666657" y="365" width="300" height="61"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="300" id="XIb-QY-CPo"/>
+                                            <constraint firstAttribute="height" constant="50" id="aUr-2Z-3bI"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" systemColor="systemGray2Color"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kfS-yb-Bk4">
+                                        <rect key="frame" x="150.33333333333334" y="431" width="92.666666666666657" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="5Kl-ff-xsj"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Registrar"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FCd-57-mTG">
+                                        <rect key="frame" x="134.33333333333334" y="486" width="124.66666666666666" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="JT2-7S-L4Q"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Iniciar Sésion"/>
+                                        <connections>
+                                            <segue destination="ljW-QQ-qAh" kind="presentation" identifier="goToIniciarSesionVIew" modalPresentationStyle="overFullScreen" id="tcl-k3-3hu"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="FCd-57-mTG" firstAttribute="top" secondItem="kfS-yb-Bk4" secondAttribute="bottom" constant="30" id="1Zr-FK-gw7"/>
-                            <constraint firstItem="aLa-SO-3TQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="7xg-mf-IkL"/>
-                            <constraint firstItem="FCd-57-mTG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Cfg-6d-Fm3"/>
-                            <constraint firstItem="7Dt-ev-aha" firstAttribute="top" secondItem="aLa-SO-3TQ" secondAttribute="bottom" constant="10" id="EMb-EK-8JY"/>
-                            <constraint firstItem="7Dt-ev-aha" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Jij-hj-qN6"/>
-                            <constraint firstItem="aLa-SO-3TQ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="KJU-Mv-Lc3"/>
-                            <constraint firstItem="Dnd-Yl-48x" firstAttribute="top" secondItem="7Dt-ev-aha" secondAttribute="bottom" constant="25" id="NyC-jF-CAU"/>
-                            <constraint firstItem="kfS-yb-Bk4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dXN-zf-e9F"/>
-                            <constraint firstItem="aLa-SO-3TQ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="gdT-vh-15e"/>
-                            <constraint firstItem="za4-iS-dFq" firstAttribute="top" secondItem="Dnd-Yl-48x" secondAttribute="bottom" constant="25" id="nPI-yO-Wq3"/>
-                            <constraint firstItem="za4-iS-dFq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="q4s-kC-ugC"/>
-                            <constraint firstItem="Dnd-Yl-48x" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qUW-D0-BcP"/>
-                            <constraint firstItem="kfS-yb-Bk4" firstAttribute="top" secondItem="za4-iS-dFq" secondAttribute="bottom" constant="30" id="whH-fg-XaC"/>
+                            <constraint firstItem="vFp-4R-Xrm" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="F97-1J-Mhk"/>
+                            <constraint firstAttribute="trailing" secondItem="vFp-4R-Xrm" secondAttribute="trailing" id="d9R-oG-Lwj"/>
+                            <constraint firstItem="vFp-4R-Xrm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="goF-zh-Z3r"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vFp-4R-Xrm" secondAttribute="bottom" id="io7-cc-DK3"/>
                         </constraints>
                     </view>
                 </viewController>

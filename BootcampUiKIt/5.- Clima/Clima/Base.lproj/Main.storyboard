@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Clima" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="despejado" translatesAutoresizingMaskIntoConstraints="NO" id="ndp-SS-7Wn">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="49" translatesAutoresizingMaskIntoConstraints="NO" id="N70-i1-qOH">
+                                <rect key="frame" x="25" y="79" width="343" height="709"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="pzM-Am-Udc">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="URf-9o-PTk">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="6Sr-Sq-bng"/>
+                                                    <constraint firstAttribute="height" constant="50" id="s1z-01-P6B"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <backgroundConfiguration key="background" image="ubicacion"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="ubicacionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oi9-I0-4NK"/>
+                                                </connections>
+                                            </button>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Escribe el nombre de tu ciudad" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SkC-91-TuM">
+                                                <rect key="frame" x="58" y="0.0" width="285" height="50"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <textInputTraits key="textInputTraits" keyboardAppearance="alert" returnKeyType="go"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="czx-jY-RSK">
+                                        <rect key="frame" x="41" y="99" width="261.33333333333331" height="90"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud.bolt" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="l6s-as-nxo">
+                                                <rect key="frame" x="0.0" y="-0.3333333333333357" width="100" height="91.666666666666686"/>
+                                                <color key="tintColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="7os-oV-0Gl"/>
+                                                    <constraint firstAttribute="height" constant="90" id="LwC-Np-8dM"/>
+                                                </constraints>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="fWY-UN-5ME">
+                                                <rect key="frame" x="108.00000000000001" y="0.0" width="153.33333333333337" height="90"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23.5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mYy-cK-Q8n">
+                                                        <rect key="frame" x="0.0" y="0.0" width="99" height="90"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                                        <color key="textColor" systemColor="systemBackgroundColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="°C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="99z-5M-htM">
+                                                        <rect key="frame" x="99" y="0.0" width="54.333333333333343" height="90"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                                        <color key="textColor" systemColor="systemBackgroundColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="En México el cielo esta nublado" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SM9-sH-Htf">
+                                        <rect key="frame" x="61.333333333333329" y="238" width="220.66666666666669" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="8rj-Um-hCR"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <color key="textColor" systemColor="systemBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l0x-a2-Jhy">
+                                        <rect key="frame" x="51.666666666666686" y="387" width="240" height="322"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="N70-i1-qOH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="2dk-Df-Vbn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="N70-i1-qOH" secondAttribute="trailing" constant="25" id="FZu-Lq-H41"/>
+                            <constraint firstItem="N70-i1-qOH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="25" id="HxD-YT-br6"/>
+                            <constraint firstItem="ndp-SS-7Wn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="RhJ-Fg-1vf"/>
+                            <constraint firstItem="ndp-SS-7Wn" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="YJi-wL-H84"/>
+                            <constraint firstAttribute="bottom" secondItem="ndp-SS-7Wn" secondAttribute="bottom" id="dcc-Lo-OkT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="N70-i1-qOH" secondAttribute="bottom" constant="30" id="vHC-8J-kbX"/>
+                            <constraint firstItem="ndp-SS-7Wn" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="vJl-Rw-teD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="climaImageView" destination="l6s-as-nxo" id="k1S-YJ-Cwd"/>
+                        <outlet property="descripcionClimaLabel" destination="SM9-sH-Htf" id="2UD-da-5YY"/>
+                        <outlet property="fondoClimaImagen" destination="ndp-SS-7Wn" id="aWN-oJ-9JY"/>
+                        <outlet property="nombreCiudadTextField" destination="SkC-91-TuM" id="tHb-4l-hIa"/>
+                        <outlet property="temperaturaLabel" destination="mYy-cK-Q8n" id="HHh-Lb-mRg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="81.679389312977094" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cloud.bolt" catalog="system" width="122" height="128"/>
+        <image name="despejado" width="512" height="330"/>
+        <image name="ubicacion" width="58.5" height="54"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
