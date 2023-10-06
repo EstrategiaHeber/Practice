@@ -18,6 +18,8 @@ class BusquedaDireccionViewController: UIViewController {
         super.viewDidLoad()
         
         direccionBuscarTextField.delegate = self
+        
+        mapa.mapType = .satelliteFlyover
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

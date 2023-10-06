@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F36B80BE2AD0676E0005B7C8 /* RutaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36B80BD2AD0676E0005B7C8 /* RutaViewController.swift */; };
+		F36B80C02AD0B8490005B7C8 /* LugaresCercanosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36B80BF2AD0B8490005B7C8 /* LugaresCercanosViewController.swift */; };
 		F3C3558F2ACF415500434A6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C3558E2ACF415500434A6F /* AppDelegate.swift */; };
 		F3C355912ACF415500434A6F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C355902ACF415500434A6F /* SceneDelegate.swift */; };
 		F3C355932ACF415500434A6F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C355922ACF415500434A6F /* ViewController.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F36B80BD2AD0676E0005B7C8 /* RutaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RutaViewController.swift; sourceTree = "<group>"; };
+		F36B80BF2AD0B8490005B7C8 /* LugaresCercanosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LugaresCercanosViewController.swift; sourceTree = "<group>"; };
 		F3C3558B2ACF415500434A6F /* 6.- MapasUIKIT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "6.- MapasUIKIT.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3C3558E2ACF415500434A6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3C355902ACF415500434A6F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +66,8 @@
 				F3C355902ACF415500434A6F /* SceneDelegate.swift */,
 				F3C355922ACF415500434A6F /* ViewController.swift */,
 				F3C355A22ACF74C600434A6F /* BusquedaDireccionViewController.swift */,
+				F36B80BD2AD0676E0005B7C8 /* RutaViewController.swift */,
+				F36B80BF2AD0B8490005B7C8 /* LugaresCercanosViewController.swift */,
 				F3C355942ACF415500434A6F /* Main.storyboard */,
 				F3C355972ACF415700434A6F /* Assets.xcassets */,
 				F3C355992ACF415700434A6F /* LaunchScreen.storyboard */,
@@ -142,6 +148,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3C355932ACF415500434A6F /* ViewController.swift in Sources */,
+				F36B80BE2AD0676E0005B7C8 /* RutaViewController.swift in Sources */,
+				F36B80C02AD0B8490005B7C8 /* LugaresCercanosViewController.swift in Sources */,
 				F3C3558F2ACF415500434A6F /* AppDelegate.swift in Sources */,
 				F3C355912ACF415500434A6F /* SceneDelegate.swift in Sources */,
 				F3C355A32ACF74C600434A6F /* BusquedaDireccionViewController.swift in Sources */,

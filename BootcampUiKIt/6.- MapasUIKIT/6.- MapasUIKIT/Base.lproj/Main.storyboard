@@ -135,6 +135,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="iU2-nx-Sc9" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="BkJ-v9-yJI">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -142,6 +143,8 @@
                         <segue destination="I6U-D0-yUT" kind="relationship" relationship="viewControllers" id="suF-v6-Wia"/>
                         <segue destination="sGl-Z2-PeK" kind="relationship" relationship="viewControllers" id="vI2-Zj-WO6"/>
                         <segue destination="k92-BU-fwV" kind="relationship" relationship="viewControllers" id="JFJ-sg-Rcj"/>
+                        <segue destination="pN6-bS-pYK" kind="relationship" relationship="viewControllers" id="xQT-Xj-d27"/>
+                        <segue destination="fpP-wm-Lgp" kind="relationship" relationship="viewControllers" id="YoZ-3K-HqB"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hP8-Vh-jm1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -184,7 +187,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hXI-Ur-1Do" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1093.8931297709923" y="-2.1126760563380285"/>
+            <point key="canvasLocation" x="982" y="-2"/>
         </scene>
         <!--Direccion-->
         <scene sceneID="94P-6u-u5d">
@@ -223,13 +226,101 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8A7-cq-BbB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1049.6183206106871" y="743.66197183098598"/>
+            <point key="canvasLocation" x="2882" y="737"/>
+        </scene>
+        <!--Lugares cercanos-->
+        <scene sceneID="TGi-mi-0v2">
+            <objects>
+                <viewController id="fpP-wm-Lgp" customClass="LugaresCercanosViewController" customModule="____MapasUIKIT" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="r5n-72-VFA">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FmL-lU-C46">
+                                <rect key="frame" x="0.0" y="59" width="393" height="710"/>
+                                <standardMapConfiguration key="preferredConfiguration"/>
+                            </mapView>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Buscar lugares cercanos" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ocl-Mu-5Mb">
+                                <rect key="frame" x="15" y="74" width="363" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="zYc-YC-Kl4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="search"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="lkX-51-MqH"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ocl-Mu-5Mb" firstAttribute="top" secondItem="lkX-51-MqH" secondAttribute="top" constant="15" id="9pc-GT-fYT"/>
+                            <constraint firstItem="FmL-lU-C46" firstAttribute="leading" secondItem="lkX-51-MqH" secondAttribute="leading" id="Bdc-ZE-UR7"/>
+                            <constraint firstItem="lkX-51-MqH" firstAttribute="trailing" secondItem="Ocl-Mu-5Mb" secondAttribute="trailing" constant="15" id="Hff-ho-wxo"/>
+                            <constraint firstItem="lkX-51-MqH" firstAttribute="bottom" secondItem="FmL-lU-C46" secondAttribute="bottom" id="T61-LA-izk"/>
+                            <constraint firstItem="lkX-51-MqH" firstAttribute="trailing" secondItem="FmL-lU-C46" secondAttribute="trailing" id="Xxg-DV-NjN"/>
+                            <constraint firstItem="Ocl-Mu-5Mb" firstAttribute="leading" secondItem="lkX-51-MqH" secondAttribute="leading" constant="15" id="lmR-3q-fgi"/>
+                            <constraint firstItem="FmL-lU-C46" firstAttribute="top" secondItem="lkX-51-MqH" secondAttribute="top" id="tVX-0J-byV"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Lugares cercanos" image="mappin" catalog="system" id="Etv-Mz-4kJ"/>
+                    <connections>
+                        <outlet property="lugaresCercanosTextField" destination="Ocl-Mu-5Mb" id="xyT-0w-tWQ"/>
+                        <outlet property="mapa" destination="FmL-lU-C46" id="uoi-Ue-q6e"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r7U-IQ-2nb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1282" y="737"/>
+        </scene>
+        <!--Ruta-->
+        <scene sceneID="ize-1e-IK9">
+            <objects>
+                <viewController id="pN6-bS-pYK" customClass="RutaViewController" customModule="____MapasUIKIT" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AFx-NE-s6c">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HgD-1U-8nk">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="769"/>
+                                <standardMapConfiguration key="preferredConfiguration"/>
+                            </mapView>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Para donde quieres viajar" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zlv-ve-nYy">
+                                <rect key="frame" x="15" y="74" width="363" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="P5t-ei-C9h"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="search"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="oAU-wG-lZC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="HgD-1U-8nk" firstAttribute="trailing" secondItem="oAU-wG-lZC" secondAttribute="trailing" id="7tR-RN-c0S"/>
+                            <constraint firstItem="HgD-1U-8nk" firstAttribute="top" secondItem="AFx-NE-s6c" secondAttribute="top" id="8G9-a2-Bcr"/>
+                            <constraint firstItem="HgD-1U-8nk" firstAttribute="bottom" secondItem="oAU-wG-lZC" secondAttribute="bottom" id="Soc-c2-HS6"/>
+                            <constraint firstItem="zlv-ve-nYy" firstAttribute="top" secondItem="oAU-wG-lZC" secondAttribute="top" constant="15" id="TtZ-gX-nfs"/>
+                            <constraint firstAttribute="trailing" secondItem="zlv-ve-nYy" secondAttribute="trailing" constant="15" id="V1w-tR-eB5"/>
+                            <constraint firstItem="zlv-ve-nYy" firstAttribute="leading" secondItem="oAU-wG-lZC" secondAttribute="leading" constant="15" id="kQb-oo-ggA"/>
+                            <constraint firstItem="HgD-1U-8nk" firstAttribute="leading" secondItem="oAU-wG-lZC" secondAttribute="leading" id="oja-F0-2SP"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Ruta" image="arrowshape.bounce.right.fill" catalog="system" id="pSQ-8U-t1f"/>
+                    <connections>
+                        <outlet property="lugarDestino" destination="zlv-ve-nYy" id="SQy-zE-qSl"/>
+                        <outlet property="mapa" destination="HgD-1U-8nk" id="D9f-LY-E4R"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fJd-cU-1nl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2121" y="737"/>
         </scene>
     </scenes>
     <resources>
+        <image name="arrowshape.bounce.right.fill" catalog="system" width="128" height="86"/>
         <image name="car" catalog="system" width="128" height="95"/>
         <image name="location.north.circle" catalog="system" width="128" height="123"/>
         <image name="map" catalog="system" width="128" height="112"/>
+        <image name="mappin" catalog="system" width="106" height="128"/>
         <image name="mappin.and.ellipse" catalog="system" width="110" height="128"/>
         <image name="person.circle" catalog="system" width="128" height="123"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
