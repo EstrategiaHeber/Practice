@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Quizz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="degradado" translatesAutoresizingMaskIntoConstraints="NO" id="oCQ-lB-kVl">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="7ai-qe-57R">
+                                <rect key="frame" x="20" y="59" width="353" height="763"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Puntaje: 4 pts" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2jj-Vz-9f2">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="NhI-1F-LDc"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aluminio" translatesAutoresizingMaskIntoConstraints="NO" id="uZu-CY-gFK">
+                                        <rect key="frame" x="0.0" y="50" width="353" height="378"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qi7-Sj-Mbg">
+                                        <rect key="frame" x="0.0" y="438" width="353" height="180"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="180" id="yxf-Yo-U9F"/>
+                                        </constraints>
+                                        <string key="text">Le empresa coca cola utilizaba en sus productos quimicos altamente toxicos. Le empresa coca cola utilizaba en sus productos quimicos altamente toxicos. </string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d3l-U5-v8F">
+                                        <rect key="frame" x="0.0" y="628" width="353" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="H54-YH-ODF"/>
+                                            <constraint firstAttribute="height" constant="50" id="MEh-Za-Wok"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Verdadero"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="respuestaUsuarioButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t7K-uk-HzO"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yvg-9e-38v">
+                                        <rect key="frame" x="0.0" y="688" width="353" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="07F-39-KH3"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="nAx-aL-6b6"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Falso"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="respuestaUsuarioButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Il-s4-Hgt"/>
+                                        </connections>
+                                    </button>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="pil-A2-gH0">
+                                        <rect key="frame" x="0.0" y="748" width="353" height="15"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="15" id="O99-pt-O53"/>
+                                        </constraints>
+                                        <color key="progressTintColor" systemColor="systemGreenColor"/>
+                                        <color key="trackTintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </progressView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="oCQ-lB-kVl" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="1M6-dK-Lm9"/>
+                            <constraint firstItem="oCQ-lB-kVl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8Gf-cs-Yzg"/>
+                            <constraint firstAttribute="bottom" secondItem="oCQ-lB-kVl" secondAttribute="bottom" id="A1C-bA-ZUl"/>
+                            <constraint firstItem="7ai-qe-57R" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="HBE-8u-XFE"/>
+                            <constraint firstItem="oCQ-lB-kVl" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="HXa-uE-cWa"/>
+                            <constraint firstItem="7ai-qe-57R" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="KDd-cc-xSV"/>
+                            <constraint firstAttribute="trailing" secondItem="7ai-qe-57R" secondAttribute="trailing" constant="20" id="pR6-d8-Nx4"/>
+                            <constraint firstAttribute="bottom" secondItem="7ai-qe-57R" secondAttribute="bottom" constant="30" id="y76-NO-dsR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="falsoButton" destination="Yvg-9e-38v" id="ZUF-JQ-1e7"/>
+                        <outlet property="imagenPregunta" destination="uZu-CY-gFK" id="89g-ux-5gJ"/>
+                        <outlet property="progreso" destination="pil-A2-gH0" id="uRM-Ke-zHx"/>
+                        <outlet property="puntajeLabel" destination="2jj-Vz-9f2" id="lDe-tJ-IDK"/>
+                        <outlet property="textoPregunta" destination="qi7-Sj-Mbg" id="pv4-Iv-o0A"/>
+                        <outlet property="verdaderoButton" destination="d3l-U5-v8F" id="zxZ-ce-Zuo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="81.679389312977094" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="aluminio" width="1200" height="890"/>
+        <image name="degradado" width="750" height="1331"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

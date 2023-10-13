@@ -2,7 +2,7 @@
 //  RutaViewController.swift
 //  6.- MapasUIKIT
 //
-//  Created by HEBER JIMENE on 06/10/23.
+//  Created by HEBER JIMENEZ on 06/10/23.
 //
 
 import UIKit
