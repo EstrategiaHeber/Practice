@@ -19,8 +19,8 @@ class PlatillosController {
     let platilloSeleccionadoSubject = PassthroughSubject<Platillo, Never>()
     
     func getPlatilloSeleccionado() -> Platillo? {
-            return model.platilloSeleccionado
-        }
+        return model.platilloSeleccionado
+    }
     
     func seleccionarPlatillo(platillo: Platillo) {
         // Lógica de la selección del platillo

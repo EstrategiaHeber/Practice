@@ -43,7 +43,6 @@ struct ProductosManager {
                   let image = UIImage(data: data),
                   let _ = response else { return }
             completionHandler(image, nil)
-            
         }
         .resume()
     }

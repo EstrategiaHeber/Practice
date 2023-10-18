@@ -68,9 +68,9 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         // Se de-selecciona la celda
         tableView.deselectRow(at: indexPath, animated: true)
         
+        self.productoEnviar = productos[indexPath.row]
         // Se crea segue para la navegacion
         performSegue(withIdentifier: "goDetalle", sender: self)
-        self.productoEnviar = productos[indexPath.row]
     }
     
     // Enviar informacion por medio del segue

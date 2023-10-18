@@ -26,8 +26,8 @@ class ViewController: UIViewController {
         self.encendido = self.mySwitch.isOn
         
         // Conectamos el suscriptor al publicador
-        self.encendidoSubscriber = self.$encendido.sink {
-            valor in
+        self.encendidoSubscriber = self.$encendido.sink { valor in
+            
             // Hacemos la lógica con el valor recibido desde el publicador y procesado por el suscriptor
             print("Se ha cambiado encendido: \(valor)")
             

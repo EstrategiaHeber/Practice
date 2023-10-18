@@ -563,7 +563,7 @@ class ContadorService {
     /// Las propiedades marcadas como `@Published` generan
     /// automáticamente un suscriptor del mismo nombre pero con
     /// el prefijo `$`, en este caso será `$conteo`.
-    ///
+    
     /// A través del publicador `$conteo` podremos hacer la
     /// suscripción de tipo `AnyCancellable` y `.sink { ... }`
     /// para escuchar cada que la propiedad cambie.
@@ -609,8 +609,10 @@ class ContadorViewController: UIViewController {
     
     /// Definimos el `UILabel` que mostrará el valor del contador
     var conteoLabel: UILabel!
+    
     /// Definimos el `UIButton` que permitirá incrementar el contador
     var incrementarButton: UIButton!
+    
     /// Definimos el `UIButton` que permitirá decrementar el contador
     var decrementarButton: UIButton!
     

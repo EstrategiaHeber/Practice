@@ -33,6 +33,8 @@ class DetalleProductoViewController: UIViewController {
         
         productosCollection.delegate = self
         productosCollection.dataSource = self
+        
+        descargarImagenes()
     }
     
     func configurarUI() {
@@ -59,20 +61,47 @@ class DetalleProductoViewController: UIViewController {
             self.imagenProducto.loadFrom(URLAddress: self.recibirProducto?.thumbnail ?? "")
         }
     }
+    
+    func descargarImagenes() {
+        
+        guard let arregloImagenes = recibirProducto?.images else {return}
+        for urlImagen in arregloImagenes {
+            //print(urlImagen)
+            manager.obtenerImagenCompletion(urlString: urlImagen) { image, error in
+                
+                if let imagenDescargada = image {
+                    self.imagenesProducto.append(imagenDescargada)
+                    //print("Existen \(self.imagenesProducto.count) guardadas")
+                    DispatchQueue.main.async {
+                        self.productosCollection.reloadData()
+                    }
+                }
+                
+            }
+        }
+    }
 
 }
 
 extension DetalleProductoViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return imagenesProducto.count
+        //print(self.imagenesProducto.count)
+        //return self.imagenesProducto.count
+        return 10
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let celda = collectionView.dequeueReusableCell(withReuseIdentifier: "ImagenProductoCell", for: indexPath)
-        // Pintar celda
+        let celda = collectionView.dequeueReusableCell(withReuseIdentifier: "ImagenProductoCell", for: indexPath) as! ImagenProductoCell
         
+        // Pintar celda
+        celda.imagenProducto.image = UIImage(systemName: "car")
+//        for imagen in imagenesProducto {
+//            DispatchQueue.main.async {
+//                celda.imagenProducto.image = imagen //UIImage(systemName: "car")
+//            }
+//        }
         return celda
     }
 }

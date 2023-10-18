@@ -35,17 +35,13 @@ class HomeViewController: UIViewController {
         //print(PlatillosController.shared.getPlatilloSeleccionado())
         
         // SUSCRIBO EL SUSCRIPTOR AL SUJETO
-        platilloSeleccionadoSubscriber = PlatillosController.shared.platilloSeleccionadoSubject.sink(receiveValue: {
-            
-            platillo in
+        platilloSeleccionadoSubscriber = PlatillosController.shared.platilloSeleccionadoSubject.sink(receiveValue: { platillo in
             
             self.nombreLabel.text = platillo.nombre
             self.precioLabel.text = "$\(platillo.precio)"
             
-            // YA HAY UN PLATILLO SELECCIONADA
+            // YA HAY UN PLATILLO SELECCIONADO
             self.verDetallesButton.isEnabled = true
-            
         })
     }
-
 }
