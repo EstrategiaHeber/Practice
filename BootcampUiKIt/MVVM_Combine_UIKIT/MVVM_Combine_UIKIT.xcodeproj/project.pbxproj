@@ -7,119 +7,119 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F32BB2122AE07A8300B0F66E /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32BB2112AE07A8300B0F66E /* VideoCell.swift */; };
-		F32BB2152AE08F6D00B0F66E /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = F32BB2142AE08F6D00B0F66E /* Kingfisher */; };
-		F3E3828E2ADF0DB1003BC30A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E3828D2ADF0DB1003BC30A /* AppDelegate.swift */; };
-		F3E382902ADF0DB1003BC30A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E3828F2ADF0DB1003BC30A /* SceneDelegate.swift */; };
-		F3E382922ADF0DB1003BC30A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E382912ADF0DB1003BC30A /* ViewController.swift */; };
-		F3E382952ADF0DB1003BC30A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3E382932ADF0DB1003BC30A /* Main.storyboard */; };
-		F3E382982ADF0DB1003BC30A /* VideoPlayerScroll.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F3E382962ADF0DB1003BC30A /* VideoPlayerScroll.xcdatamodeld */; };
-		F3E3829A2ADF0DB3003BC30A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3E382992ADF0DB3003BC30A /* Assets.xcassets */; };
-		F3E3829D2ADF0DB3003BC30A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3E3829B2ADF0DB3003BC30A /* LaunchScreen.storyboard */; };
-		F3E382A52ADF17F4003BC30A /* ResponseDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E382A42ADF17F4003BC30A /* ResponseDataModel.swift */; };
-		F3E382A72ADF1D48003BC30A /* VideoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E382A62ADF1D48003BC30A /* VideoManager.swift */; };
+		F3147EF22AE2E274009DD4D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3147EF12AE2E274009DD4D8 /* AppDelegate.swift */; };
+		F3147EF42AE2E274009DD4D8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3147EF32AE2E274009DD4D8 /* SceneDelegate.swift */; };
+		F3147EF62AE2E274009DD4D8 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3147EF52AE2E274009DD4D8 /* LoginView.swift */; };
+		F3147EF92AE2E274009DD4D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3147EF72AE2E274009DD4D8 /* Main.storyboard */; };
+		F3147EFB2AE2E275009DD4D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3147EFA2AE2E275009DD4D8 /* Assets.xcassets */; };
+		F3147EFE2AE2E275009DD4D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3147EFC2AE2E275009DD4D8 /* LaunchScreen.storyboard */; };
+		F3147F062AE2E2E1009DD4D8 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3147F052AE2E2E1009DD4D8 /* LoginViewModel.swift */; };
+		F3147F082AE2E769009DD4D8 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3147F072AE2E769009DD4D8 /* ApiClient.swift */; };
+		F3147F0B2AE2E906009DD4D8 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3147F0A2AE2E906009DD4D8 /* UserModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F32BB2112AE07A8300B0F66E /* VideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
-		F3E3828A2ADF0DB1003BC30A /* VideoPlayerScroll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoPlayerScroll.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F3E3828D2ADF0DB1003BC30A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F3E3828F2ADF0DB1003BC30A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F3E382912ADF0DB1003BC30A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F3E382942ADF0DB1003BC30A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F3E382972ADF0DB1003BC30A /* VideoPlayerScroll.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VideoPlayerScroll.xcdatamodel; sourceTree = "<group>"; };
-		F3E382992ADF0DB3003BC30A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F3E3829C2ADF0DB3003BC30A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		F3E3829E2ADF0DB3003BC30A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F3E382A42ADF17F4003BC30A /* ResponseDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseDataModel.swift; sourceTree = "<group>"; };
-		F3E382A62ADF1D48003BC30A /* VideoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoManager.swift; sourceTree = "<group>"; };
+		F3147EEE2AE2E274009DD4D8 /* MVVM_Combine_UIKIT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVM_Combine_UIKIT.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3147EF12AE2E274009DD4D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F3147EF32AE2E274009DD4D8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F3147EF52AE2E274009DD4D8 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		F3147EF82AE2E274009DD4D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F3147EFA2AE2E275009DD4D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F3147EFD2AE2E275009DD4D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F3147EFF2AE2E275009DD4D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3147F052AE2E2E1009DD4D8 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		F3147F072AE2E769009DD4D8 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		F3147F0A2AE2E906009DD4D8 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		F3E382872ADF0DB1003BC30A /* Frameworks */ = {
+		F3147EEB2AE2E274009DD4D8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F32BB2152AE08F6D00B0F66E /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F3E382812ADF0DB1003BC30A = {
+		F3147EE52AE2E274009DD4D8 = {
 			isa = PBXGroup;
 			children = (
-				F3E3828C2ADF0DB1003BC30A /* VideoPlayerScroll */,
-				F3E3828B2ADF0DB1003BC30A /* Products */,
+				F3147EF02AE2E274009DD4D8 /* MVVM_Combine_UIKIT */,
+				F3147EEF2AE2E274009DD4D8 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		F3E3828B2ADF0DB1003BC30A /* Products */ = {
+		F3147EEF2AE2E274009DD4D8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F3E3828A2ADF0DB1003BC30A /* VideoPlayerScroll.app */,
+				F3147EEE2AE2E274009DD4D8 /* MVVM_Combine_UIKIT.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F3E3828C2ADF0DB1003BC30A /* VideoPlayerScroll */ = {
+		F3147EF02AE2E274009DD4D8 /* MVVM_Combine_UIKIT */ = {
 			isa = PBXGroup;
 			children = (
-				F3E3828D2ADF0DB1003BC30A /* AppDelegate.swift */,
-				F3E3828F2ADF0DB1003BC30A /* SceneDelegate.swift */,
-				F3E382912ADF0DB1003BC30A /* ViewController.swift */,
-				F3E382A42ADF17F4003BC30A /* ResponseDataModel.swift */,
-				F3E382A62ADF1D48003BC30A /* VideoManager.swift */,
-				F32BB2112AE07A8300B0F66E /* VideoCell.swift */,
-				F3E382932ADF0DB1003BC30A /* Main.storyboard */,
-				F3E382992ADF0DB3003BC30A /* Assets.xcassets */,
-				F3E3829B2ADF0DB3003BC30A /* LaunchScreen.storyboard */,
-				F3E3829E2ADF0DB3003BC30A /* Info.plist */,
-				F3E382962ADF0DB1003BC30A /* VideoPlayerScroll.xcdatamodeld */,
+				F3147EF12AE2E274009DD4D8 /* AppDelegate.swift */,
+				F3147EF32AE2E274009DD4D8 /* SceneDelegate.swift */,
+				F3147EF52AE2E274009DD4D8 /* LoginView.swift */,
+				F3147F052AE2E2E1009DD4D8 /* LoginViewModel.swift */,
+				F3147F092AE2E8F5009DD4D8 /* Model */,
+				F3147EF72AE2E274009DD4D8 /* Main.storyboard */,
+				F3147EFA2AE2E275009DD4D8 /* Assets.xcassets */,
+				F3147EFC2AE2E275009DD4D8 /* LaunchScreen.storyboard */,
+				F3147EFF2AE2E275009DD4D8 /* Info.plist */,
 			);
-			path = VideoPlayerScroll;
+			path = MVVM_Combine_UIKIT;
+			sourceTree = "<group>";
+		};
+		F3147F092AE2E8F5009DD4D8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F3147F072AE2E769009DD4D8 /* ApiClient.swift */,
+				F3147F0A2AE2E906009DD4D8 /* UserModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F3E382892ADF0DB1003BC30A /* VideoPlayerScroll */ = {
+		F3147EED2AE2E274009DD4D8 /* MVVM_Combine_UIKIT */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F3E382A12ADF0DB3003BC30A /* Build configuration list for PBXNativeTarget "VideoPlayerScroll" */;
+			buildConfigurationList = F3147F022AE2E275009DD4D8 /* Build configuration list for PBXNativeTarget "MVVM_Combine_UIKIT" */;
 			buildPhases = (
-				F3E382862ADF0DB1003BC30A /* Sources */,
-				F3E382872ADF0DB1003BC30A /* Frameworks */,
-				F3E382882ADF0DB1003BC30A /* Resources */,
+				F3147EEA2AE2E274009DD4D8 /* Sources */,
+				F3147EEB2AE2E274009DD4D8 /* Frameworks */,
+				F3147EEC2AE2E274009DD4D8 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = VideoPlayerScroll;
-			packageProductDependencies = (
-				F32BB2142AE08F6D00B0F66E /* Kingfisher */,
-			);
-			productName = VideoPlayerScroll;
-			productReference = F3E3828A2ADF0DB1003BC30A /* VideoPlayerScroll.app */;
+			name = MVVM_Combine_UIKIT;
+			productName = MVVM_Combine_UIKIT;
+			productReference = F3147EEE2AE2E274009DD4D8 /* MVVM_Combine_UIKIT.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		F3E382822ADF0DB1003BC30A /* Project object */ = {
+		F3147EE62AE2E274009DD4D8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
-					F3E382892ADF0DB1003BC30A = {
-						CreatedOnToolsVersion = 15.0;
+					F3147EED2AE2E274009DD4D8 = {
+						CreatedOnToolsVersion = 15.0.1;
 					};
 				};
 			};
-			buildConfigurationList = F3E382852ADF0DB1003BC30A /* Build configuration list for PBXProject "VideoPlayerScroll" */;
+			buildConfigurationList = F3147EE92AE2E274009DD4D8 /* Build configuration list for PBXProject "MVVM_Combine_UIKIT" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -127,62 +127,58 @@
 				en,
 				Base,
 			);
-			mainGroup = F3E382812ADF0DB1003BC30A;
-			packageReferences = (
-				F32BB2132AE08F6D00B0F66E /* XCRemoteSwiftPackageReference "Kingfisher" */,
-			);
-			productRefGroup = F3E3828B2ADF0DB1003BC30A /* Products */;
+			mainGroup = F3147EE52AE2E274009DD4D8;
+			productRefGroup = F3147EEF2AE2E274009DD4D8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F3E382892ADF0DB1003BC30A /* VideoPlayerScroll */,
+				F3147EED2AE2E274009DD4D8 /* MVVM_Combine_UIKIT */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		F3E382882ADF0DB1003BC30A /* Resources */ = {
+		F3147EEC2AE2E274009DD4D8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3E3829D2ADF0DB3003BC30A /* LaunchScreen.storyboard in Resources */,
-				F3E3829A2ADF0DB3003BC30A /* Assets.xcassets in Resources */,
-				F3E382952ADF0DB1003BC30A /* Main.storyboard in Resources */,
+				F3147EFE2AE2E275009DD4D8 /* LaunchScreen.storyboard in Resources */,
+				F3147EFB2AE2E275009DD4D8 /* Assets.xcassets in Resources */,
+				F3147EF92AE2E274009DD4D8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		F3E382862ADF0DB1003BC30A /* Sources */ = {
+		F3147EEA2AE2E274009DD4D8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3E382922ADF0DB1003BC30A /* ViewController.swift in Sources */,
-				F32BB2122AE07A8300B0F66E /* VideoCell.swift in Sources */,
-				F3E382982ADF0DB1003BC30A /* VideoPlayerScroll.xcdatamodeld in Sources */,
-				F3E3828E2ADF0DB1003BC30A /* AppDelegate.swift in Sources */,
-				F3E382902ADF0DB1003BC30A /* SceneDelegate.swift in Sources */,
-				F3E382A52ADF17F4003BC30A /* ResponseDataModel.swift in Sources */,
-				F3E382A72ADF1D48003BC30A /* VideoManager.swift in Sources */,
+				F3147F062AE2E2E1009DD4D8 /* LoginViewModel.swift in Sources */,
+				F3147EF62AE2E274009DD4D8 /* LoginView.swift in Sources */,
+				F3147F082AE2E769009DD4D8 /* ApiClient.swift in Sources */,
+				F3147EF22AE2E274009DD4D8 /* AppDelegate.swift in Sources */,
+				F3147F0B2AE2E906009DD4D8 /* UserModel.swift in Sources */,
+				F3147EF42AE2E274009DD4D8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F3E382932ADF0DB1003BC30A /* Main.storyboard */ = {
+		F3147EF72AE2E274009DD4D8 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F3E382942ADF0DB1003BC30A /* Base */,
+				F3147EF82AE2E274009DD4D8 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		F3E3829B2ADF0DB3003BC30A /* LaunchScreen.storyboard */ = {
+		F3147EFC2AE2E275009DD4D8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F3E3829C2ADF0DB3003BC30A /* Base */,
+				F3147EFD2AE2E275009DD4D8 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -190,7 +186,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		F3E3829F2ADF0DB3003BC30A /* Debug */ = {
+		F3147F002AE2E275009DD4D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -253,7 +249,7 @@
 			};
 			name = Debug;
 		};
-		F3E382A02ADF0DB3003BC30A /* Release */ = {
+		F3147F012AE2E275009DD4D8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -309,7 +305,7 @@
 			};
 			name = Release;
 		};
-		F3E382A22ADF0DB3003BC30A /* Debug */ = {
+		F3147F032AE2E275009DD4D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -318,18 +314,19 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = S7JA3N9NV4;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = VideoPlayerScroll/Info.plist;
+				INFOPLIST_FILE = MVVM_Combine_UIKIT/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = HeberJimenez.VideoPlayerScroll;
+				PRODUCT_BUNDLE_IDENTIFIER = "HeberJimenez.MVVM-Combine-UIKIT";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -337,7 +334,7 @@
 			};
 			name = Debug;
 		};
-		F3E382A32ADF0DB3003BC30A /* Release */ = {
+		F3147F042AE2E275009DD4D8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -346,18 +343,19 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = S7JA3N9NV4;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = VideoPlayerScroll/Info.plist;
+				INFOPLIST_FILE = MVVM_Combine_UIKIT/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = HeberJimenez.VideoPlayerScroll;
+				PRODUCT_BUNDLE_IDENTIFIER = "HeberJimenez.MVVM-Combine-UIKIT";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -368,57 +366,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F3E382852ADF0DB1003BC30A /* Build configuration list for PBXProject "VideoPlayerScroll" */ = {
+		F3147EE92AE2E274009DD4D8 /* Build configuration list for PBXProject "MVVM_Combine_UIKIT" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F3E3829F2ADF0DB3003BC30A /* Debug */,
-				F3E382A02ADF0DB3003BC30A /* Release */,
+				F3147F002AE2E275009DD4D8 /* Debug */,
+				F3147F012AE2E275009DD4D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F3E382A12ADF0DB3003BC30A /* Build configuration list for PBXNativeTarget "VideoPlayerScroll" */ = {
+		F3147F022AE2E275009DD4D8 /* Build configuration list for PBXNativeTarget "MVVM_Combine_UIKIT" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F3E382A22ADF0DB3003BC30A /* Debug */,
-				F3E382A32ADF0DB3003BC30A /* Release */,
+				F3147F032AE2E275009DD4D8 /* Debug */,
+				F3147F042AE2E275009DD4D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		F32BB2132AE08F6D00B0F66E /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/onevcat/Kingfisher";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 7.9.1;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		F32BB2142AE08F6D00B0F66E /* Kingfisher */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F32BB2132AE08F6D00B0F66E /* XCRemoteSwiftPackageReference "Kingfisher" */;
-			productName = Kingfisher;
-		};
-/* End XCSwiftPackageProductDependency section */
-
-/* Begin XCVersionGroup section */
-		F3E382962ADF0DB1003BC30A /* VideoPlayerScroll.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				F3E382972ADF0DB1003BC30A /* VideoPlayerScroll.xcdatamodel */,
-			);
-			currentVersion = F3E382972ADF0DB1003BC30A /* VideoPlayerScroll.xcdatamodel */;
-			path = VideoPlayerScroll.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
-	rootObject = F3E382822ADF0DB1003BC30A /* Project object */;
+	rootObject = F3147EE62AE2E274009DD4D8 /* Project object */;
 }

@@ -7,119 +7,108 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F32BB2122AE07A8300B0F66E /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32BB2112AE07A8300B0F66E /* VideoCell.swift */; };
-		F32BB2152AE08F6D00B0F66E /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = F32BB2142AE08F6D00B0F66E /* Kingfisher */; };
-		F3E3828E2ADF0DB1003BC30A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E3828D2ADF0DB1003BC30A /* AppDelegate.swift */; };
-		F3E382902ADF0DB1003BC30A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E3828F2ADF0DB1003BC30A /* SceneDelegate.swift */; };
-		F3E382922ADF0DB1003BC30A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E382912ADF0DB1003BC30A /* ViewController.swift */; };
-		F3E382952ADF0DB1003BC30A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3E382932ADF0DB1003BC30A /* Main.storyboard */; };
-		F3E382982ADF0DB1003BC30A /* VideoPlayerScroll.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F3E382962ADF0DB1003BC30A /* VideoPlayerScroll.xcdatamodeld */; };
-		F3E3829A2ADF0DB3003BC30A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3E382992ADF0DB3003BC30A /* Assets.xcassets */; };
-		F3E3829D2ADF0DB3003BC30A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3E3829B2ADF0DB3003BC30A /* LaunchScreen.storyboard */; };
-		F3E382A52ADF17F4003BC30A /* ResponseDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E382A42ADF17F4003BC30A /* ResponseDataModel.swift */; };
-		F3E382A72ADF1D48003BC30A /* VideoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E382A62ADF1D48003BC30A /* VideoManager.swift */; };
+		F31A98E02AE1C98200346013 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31A98DF2AE1C98200346013 /* AppDelegate.swift */; };
+		F31A98E22AE1C98200346013 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31A98E12AE1C98200346013 /* SceneDelegate.swift */; };
+		F31A98E42AE1C98200346013 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31A98E32AE1C98200346013 /* ViewController.swift */; };
+		F31A98E72AE1C98200346013 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F31A98E52AE1C98200346013 /* Main.storyboard */; };
+		F31A98EA2AE1C98200346013 /* VistasCodigo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F31A98E82AE1C98200346013 /* VistasCodigo.xcdatamodeld */; };
+		F31A98EC2AE1C98300346013 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F31A98EB2AE1C98300346013 /* Assets.xcassets */; };
+		F31A98EF2AE1C98300346013 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F31A98ED2AE1C98300346013 /* LaunchScreen.storyboard */; };
+		F31A98F72AE1ECF300346013 /* ConfiguracionVista.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31A98F62AE1ECF300346013 /* ConfiguracionVista.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F32BB2112AE07A8300B0F66E /* VideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
-		F3E3828A2ADF0DB1003BC30A /* VideoPlayerScroll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoPlayerScroll.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F3E3828D2ADF0DB1003BC30A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F3E3828F2ADF0DB1003BC30A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F3E382912ADF0DB1003BC30A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F3E382942ADF0DB1003BC30A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F3E382972ADF0DB1003BC30A /* VideoPlayerScroll.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VideoPlayerScroll.xcdatamodel; sourceTree = "<group>"; };
-		F3E382992ADF0DB3003BC30A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F3E3829C2ADF0DB3003BC30A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		F3E3829E2ADF0DB3003BC30A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F3E382A42ADF17F4003BC30A /* ResponseDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseDataModel.swift; sourceTree = "<group>"; };
-		F3E382A62ADF1D48003BC30A /* VideoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoManager.swift; sourceTree = "<group>"; };
+		F31A98DC2AE1C98200346013 /* VistasCodigo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VistasCodigo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F31A98DF2AE1C98200346013 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F31A98E12AE1C98200346013 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F31A98E32AE1C98200346013 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F31A98E62AE1C98200346013 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F31A98E92AE1C98200346013 /* VistasCodigo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VistasCodigo.xcdatamodel; sourceTree = "<group>"; };
+		F31A98EB2AE1C98300346013 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F31A98EE2AE1C98300346013 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F31A98F02AE1C98300346013 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F31A98F62AE1ECF300346013 /* ConfiguracionVista.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfiguracionVista.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		F3E382872ADF0DB1003BC30A /* Frameworks */ = {
+		F31A98D92AE1C98200346013 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F32BB2152AE08F6D00B0F66E /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F3E382812ADF0DB1003BC30A = {
+		F31A98D32AE1C98200346013 = {
 			isa = PBXGroup;
 			children = (
-				F3E3828C2ADF0DB1003BC30A /* VideoPlayerScroll */,
-				F3E3828B2ADF0DB1003BC30A /* Products */,
+				F31A98DE2AE1C98200346013 /* VistasCodigo */,
+				F31A98DD2AE1C98200346013 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		F3E3828B2ADF0DB1003BC30A /* Products */ = {
+		F31A98DD2AE1C98200346013 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F3E3828A2ADF0DB1003BC30A /* VideoPlayerScroll.app */,
+				F31A98DC2AE1C98200346013 /* VistasCodigo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F3E3828C2ADF0DB1003BC30A /* VideoPlayerScroll */ = {
+		F31A98DE2AE1C98200346013 /* VistasCodigo */ = {
 			isa = PBXGroup;
 			children = (
-				F3E3828D2ADF0DB1003BC30A /* AppDelegate.swift */,
-				F3E3828F2ADF0DB1003BC30A /* SceneDelegate.swift */,
-				F3E382912ADF0DB1003BC30A /* ViewController.swift */,
-				F3E382A42ADF17F4003BC30A /* ResponseDataModel.swift */,
-				F3E382A62ADF1D48003BC30A /* VideoManager.swift */,
-				F32BB2112AE07A8300B0F66E /* VideoCell.swift */,
-				F3E382932ADF0DB1003BC30A /* Main.storyboard */,
-				F3E382992ADF0DB3003BC30A /* Assets.xcassets */,
-				F3E3829B2ADF0DB3003BC30A /* LaunchScreen.storyboard */,
-				F3E3829E2ADF0DB3003BC30A /* Info.plist */,
-				F3E382962ADF0DB1003BC30A /* VideoPlayerScroll.xcdatamodeld */,
+				F31A98DF2AE1C98200346013 /* AppDelegate.swift */,
+				F31A98E12AE1C98200346013 /* SceneDelegate.swift */,
+				F31A98E32AE1C98200346013 /* ViewController.swift */,
+				F31A98F62AE1ECF300346013 /* ConfiguracionVista.swift */,
+				F31A98E52AE1C98200346013 /* Main.storyboard */,
+				F31A98EB2AE1C98300346013 /* Assets.xcassets */,
+				F31A98ED2AE1C98300346013 /* LaunchScreen.storyboard */,
+				F31A98F02AE1C98300346013 /* Info.plist */,
+				F31A98E82AE1C98200346013 /* VistasCodigo.xcdatamodeld */,
 			);
-			path = VideoPlayerScroll;
+			path = VistasCodigo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F3E382892ADF0DB1003BC30A /* VideoPlayerScroll */ = {
+		F31A98DB2AE1C98200346013 /* VistasCodigo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F3E382A12ADF0DB3003BC30A /* Build configuration list for PBXNativeTarget "VideoPlayerScroll" */;
+			buildConfigurationList = F31A98F32AE1C98300346013 /* Build configuration list for PBXNativeTarget "VistasCodigo" */;
 			buildPhases = (
-				F3E382862ADF0DB1003BC30A /* Sources */,
-				F3E382872ADF0DB1003BC30A /* Frameworks */,
-				F3E382882ADF0DB1003BC30A /* Resources */,
+				F31A98D82AE1C98200346013 /* Sources */,
+				F31A98D92AE1C98200346013 /* Frameworks */,
+				F31A98DA2AE1C98200346013 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = VideoPlayerScroll;
-			packageProductDependencies = (
-				F32BB2142AE08F6D00B0F66E /* Kingfisher */,
-			);
-			productName = VideoPlayerScroll;
-			productReference = F3E3828A2ADF0DB1003BC30A /* VideoPlayerScroll.app */;
+			name = VistasCodigo;
+			productName = VistasCodigo;
+			productReference = F31A98DC2AE1C98200346013 /* VistasCodigo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		F3E382822ADF0DB1003BC30A /* Project object */ = {
+		F31A98D42AE1C98200346013 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
-					F3E382892ADF0DB1003BC30A = {
+					F31A98DB2AE1C98200346013 = {
 						CreatedOnToolsVersion = 15.0;
 					};
 				};
 			};
-			buildConfigurationList = F3E382852ADF0DB1003BC30A /* Build configuration list for PBXProject "VideoPlayerScroll" */;
+			buildConfigurationList = F31A98D72AE1C98200346013 /* Build configuration list for PBXProject "VistasCodigo" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -127,62 +116,57 @@
 				en,
 				Base,
 			);
-			mainGroup = F3E382812ADF0DB1003BC30A;
-			packageReferences = (
-				F32BB2132AE08F6D00B0F66E /* XCRemoteSwiftPackageReference "Kingfisher" */,
-			);
-			productRefGroup = F3E3828B2ADF0DB1003BC30A /* Products */;
+			mainGroup = F31A98D32AE1C98200346013;
+			productRefGroup = F31A98DD2AE1C98200346013 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F3E382892ADF0DB1003BC30A /* VideoPlayerScroll */,
+				F31A98DB2AE1C98200346013 /* VistasCodigo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		F3E382882ADF0DB1003BC30A /* Resources */ = {
+		F31A98DA2AE1C98200346013 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3E3829D2ADF0DB3003BC30A /* LaunchScreen.storyboard in Resources */,
-				F3E3829A2ADF0DB3003BC30A /* Assets.xcassets in Resources */,
-				F3E382952ADF0DB1003BC30A /* Main.storyboard in Resources */,
+				F31A98EF2AE1C98300346013 /* LaunchScreen.storyboard in Resources */,
+				F31A98EC2AE1C98300346013 /* Assets.xcassets in Resources */,
+				F31A98E72AE1C98200346013 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		F3E382862ADF0DB1003BC30A /* Sources */ = {
+		F31A98D82AE1C98200346013 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3E382922ADF0DB1003BC30A /* ViewController.swift in Sources */,
-				F32BB2122AE07A8300B0F66E /* VideoCell.swift in Sources */,
-				F3E382982ADF0DB1003BC30A /* VideoPlayerScroll.xcdatamodeld in Sources */,
-				F3E3828E2ADF0DB1003BC30A /* AppDelegate.swift in Sources */,
-				F3E382902ADF0DB1003BC30A /* SceneDelegate.swift in Sources */,
-				F3E382A52ADF17F4003BC30A /* ResponseDataModel.swift in Sources */,
-				F3E382A72ADF1D48003BC30A /* VideoManager.swift in Sources */,
+				F31A98EA2AE1C98200346013 /* VistasCodigo.xcdatamodeld in Sources */,
+				F31A98E42AE1C98200346013 /* ViewController.swift in Sources */,
+				F31A98F72AE1ECF300346013 /* ConfiguracionVista.swift in Sources */,
+				F31A98E02AE1C98200346013 /* AppDelegate.swift in Sources */,
+				F31A98E22AE1C98200346013 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F3E382932ADF0DB1003BC30A /* Main.storyboard */ = {
+		F31A98E52AE1C98200346013 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F3E382942ADF0DB1003BC30A /* Base */,
+				F31A98E62AE1C98200346013 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		F3E3829B2ADF0DB3003BC30A /* LaunchScreen.storyboard */ = {
+		F31A98ED2AE1C98300346013 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F3E3829C2ADF0DB3003BC30A /* Base */,
+				F31A98EE2AE1C98300346013 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -190,7 +174,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		F3E3829F2ADF0DB3003BC30A /* Debug */ = {
+		F31A98F12AE1C98300346013 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -253,7 +237,7 @@
 			};
 			name = Debug;
 		};
-		F3E382A02ADF0DB3003BC30A /* Release */ = {
+		F31A98F22AE1C98300346013 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -309,7 +293,7 @@
 			};
 			name = Release;
 		};
-		F3E382A22ADF0DB3003BC30A /* Debug */ = {
+		F31A98F42AE1C98300346013 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -318,7 +302,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = S7JA3N9NV4;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = VideoPlayerScroll/Info.plist;
+				INFOPLIST_FILE = VistasCodigo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -329,7 +313,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = HeberJimenez.VideoPlayerScroll;
+				PRODUCT_BUNDLE_IDENTIFIER = HeberJimenez.VistasCodigo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -337,7 +321,7 @@
 			};
 			name = Debug;
 		};
-		F3E382A32ADF0DB3003BC30A /* Release */ = {
+		F31A98F52AE1C98300346013 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -346,7 +330,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = S7JA3N9NV4;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = VideoPlayerScroll/Info.plist;
+				INFOPLIST_FILE = VistasCodigo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -357,7 +341,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = HeberJimenez.VideoPlayerScroll;
+				PRODUCT_BUNDLE_IDENTIFIER = HeberJimenez.VistasCodigo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -368,57 +352,38 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F3E382852ADF0DB1003BC30A /* Build configuration list for PBXProject "VideoPlayerScroll" */ = {
+		F31A98D72AE1C98200346013 /* Build configuration list for PBXProject "VistasCodigo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F3E3829F2ADF0DB3003BC30A /* Debug */,
-				F3E382A02ADF0DB3003BC30A /* Release */,
+				F31A98F12AE1C98300346013 /* Debug */,
+				F31A98F22AE1C98300346013 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F3E382A12ADF0DB3003BC30A /* Build configuration list for PBXNativeTarget "VideoPlayerScroll" */ = {
+		F31A98F32AE1C98300346013 /* Build configuration list for PBXNativeTarget "VistasCodigo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F3E382A22ADF0DB3003BC30A /* Debug */,
-				F3E382A32ADF0DB3003BC30A /* Release */,
+				F31A98F42AE1C98300346013 /* Debug */,
+				F31A98F52AE1C98300346013 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCRemoteSwiftPackageReference section */
-		F32BB2132AE08F6D00B0F66E /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/onevcat/Kingfisher";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 7.9.1;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		F32BB2142AE08F6D00B0F66E /* Kingfisher */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F32BB2132AE08F6D00B0F66E /* XCRemoteSwiftPackageReference "Kingfisher" */;
-			productName = Kingfisher;
-		};
-/* End XCSwiftPackageProductDependency section */
-
 /* Begin XCVersionGroup section */
-		F3E382962ADF0DB1003BC30A /* VideoPlayerScroll.xcdatamodeld */ = {
+		F31A98E82AE1C98200346013 /* VistasCodigo.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				F3E382972ADF0DB1003BC30A /* VideoPlayerScroll.xcdatamodel */,
+				F31A98E92AE1C98200346013 /* VistasCodigo.xcdatamodel */,
 			);
-			currentVersion = F3E382972ADF0DB1003BC30A /* VideoPlayerScroll.xcdatamodel */;
-			path = VideoPlayerScroll.xcdatamodeld;
+			currentVersion = F31A98E92AE1C98200346013 /* VistasCodigo.xcdatamodel */;
+			path = VistasCodigo.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */
 	};
-	rootObject = F3E382822ADF0DB1003BC30A /* Project object */;
+	rootObject = F31A98D42AE1C98200346013 /* Project object */;
 }
