@@ -15,6 +15,16 @@ struct GradientsView: View {
                 .fill(
                     
                     LinearGradient(gradient:
+                                    Gradient(colors: [Color.red, Color.red.opacity(0.8), Color.red.opacity(0.6), Color.red.opacity(0.4), Color.red.opacity(0.2)]),
+                                   startPoint: .leading,
+                                   endPoint: .trailing)
+                )
+                .frame(height: 200)
+            
+            RoundedRectangle(cornerRadius: 25.0)
+                .fill(
+                    
+                    LinearGradient(gradient:
                                     Gradient(colors: [Color.red, Color.blue]),
                                    startPoint: .leading,
                                    endPoint: .trailing)

@@ -22,7 +22,6 @@ class StoreHomeViewModel {
     
     // ESCUCHA
     //var modelSubscriber: AnyCancellable?
-    
     weak var fruitsSubscriber: AnyCancellable?
     weak var fruitSelectedSubscriber: AnyCancellable?
     
@@ -33,21 +32,22 @@ class StoreHomeViewModel {
     
     init() {
         
-        self.fruitsSubscriber = StoreModel.shared.$fruits.sink {
-            fruits in
+        // Subscripcion al publicador "fruits"
+        self.fruitsSubscriber = StoreModel.shared.$fruits.sink { fruits in
+            // Se pasa la informacion al ViewController
             self.view?.fruits(fruitsUptated: fruits)
         }
         
-        self.fruitSelectedSubscriber = StoreModel.shared.$selectedFruit.sink {
-            selectedFruit in
+        // Subscripcion al publicador "fruitSelectedSubscriber"
+        self.fruitSelectedSubscriber = StoreModel.shared.$selectedFruit.sink { selectedFruit in
             if let selectedFruit = selectedFruit {
                 self.view?.fruits(fruitSelected: selectedFruit)
             }
         }
-        
     }
     
     deinit {
+        // Se libera memoria 
         print("ELIMINANDO StoreHomeViewModel")
         self.fruitsSubscriber?.cancel()
         self.fruitsSubscriber = nil

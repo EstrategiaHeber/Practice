@@ -13,15 +13,20 @@ class TodoAddViewModel {
     var sessionId: Int = Int.random(in: 1...Int.max)
     var title: String = ""
     
+    // Notificador que indicara cual fue el "todo" nuevo creado (PUBLICA)
     @Published var todoAdded: TodoEntity?
+    
+    // Subscriptor que cachara cambios (ESCUCHA)
     var todoAddedSubscriber: AnyCancellable?
     
     init() {
-        self.todoAddedSubscriber = TodoModel.shared.$todoAdded.dropFirst().sink {
-            (sessionId, todo) in
+        // Subscripcion
+        self.todoAddedSubscriber = TodoModel.shared.$todoAdded.dropFirst().sink { (sessionId, todo) in
+            
             print("Se recibió un Todo agregado de la sesión \(sessionId) [nuestra sesión es: \(self.sessionId)]")
+            
             if self.sessionId == sessionId {
-                print("Avisando a la vista que el Todo fue agregado \(todo?.title ?? "SIN TÍTULO")")
+                print("Avisando a la vista que el todo fue agregado \(todo?.title ?? "SIN TÍTULO")")
                 self.todoAdded = todo
             }
         }
@@ -41,5 +46,4 @@ class TodoAddViewModel {
         print("Generando sesión \(self.sessionId)")
         TodoModel.shared.addTodo(sessionId: self.sessionId, title: self.title)
     }
-    
 }

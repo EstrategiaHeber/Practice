@@ -56,8 +56,7 @@ class ViewController: UIViewController {
         ///             recibidos.
         ///  **Nota:** El `suscriptorFrutas` será retenido durante
         ///             el ciclo de vida que deseemos que tenga.
-        suscriptorFrutas = subjectFrutas.sink {
-            fruta in
+        suscriptorFrutas = subjectFrutas.sink { fruta in
             print("Se ha recibido la fruta: \(fruta)")
             self.frutaLabel.text = fruta
         }

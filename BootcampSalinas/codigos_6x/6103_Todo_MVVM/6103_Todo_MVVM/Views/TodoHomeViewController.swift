@@ -15,6 +15,7 @@ class TodoHomeViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     var todosSubscriber: AnyCancellable?
+    var todoSelectSubscriber: AnyCancellable?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,10 +23,15 @@ class TodoHomeViewController: UIViewController {
         self.tableView.dataSource = self
         self.tableView.delegate = self
         
-        self.todosSubscriber = homeViewModel.$todos.sink(receiveValue: {
-            _ in
+        self.todosSubscriber = homeViewModel.$todos.sink(receiveValue: { _ in
             self.tableView.reloadData()
         })
+        
+//        self.todoSelectSubscriber = homeViewModel.$todoSelected.sink(receiveValue: { todo in
+//            self.
+//        })
+        
+        //self.homeViewModel.eliminarTodos()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -49,6 +55,7 @@ extension TodoHomeViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "TodoCell")!
         
         let todo = self.homeViewModel.todos[indexPath.row]
@@ -67,4 +74,14 @@ extension TodoHomeViewController: UITableViewDataSource {
 
 extension TodoHomeViewController: UITableViewDelegate {
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        // Seleccion de "todo"
+        let todo = self.homeViewModel.todos[indexPath.row]
+        // Preparacion de segue
+        self.performSegue(withIdentifier: "TodoDetailsSegue", sender: nil)
+        
+        // Notificar cual fue el "todo" seleccionado 
+        self.homeViewModel.selectTodo(index: indexPath.row)
+    }
 }

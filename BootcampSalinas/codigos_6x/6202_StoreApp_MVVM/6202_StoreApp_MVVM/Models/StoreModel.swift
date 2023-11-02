@@ -11,8 +11,10 @@ import Combine
 
 class StoreModel {
     
+    // Singleton
     static let shared = StoreModel()
     
+    // Creacion de Base de Datos
     let container: NSPersistentContainer = {
         let container = NSPersistentContainer(name: "StoreModelApp")
         
@@ -25,34 +27,42 @@ class StoreModel {
         return container
     }()
     
+    // Notificadores
     @Published var fruits: [FruitEntity] = []
-    
     @Published var selectedIndex: Int?
     @Published var selectedFruit: FruitEntity?
     
+    // Se cargan todas las frutas existentes
     init() {
         self.loadFruits()
     }
     
+    // Se libera espacio de memoria
     deinit {
         self.fruits.removeAll()
     }
     
+    // Se cargan todas las frutas existentes desde CoreData
     func loadFruits() {
+        // Se crea el contexto
         let context = self.container.viewContext
-        
+        // Se hace el query para que traiga todo lo existente en la tabla "FruitEntity"
         let request = FruitEntity.fetchRequest()
         
+        // Se recupera los elementos
         if let fruits = try? context.fetch(request) {
+            // Sealmacenan para hacer la transmision
             self.fruits = fruits.reversed()
         }
     }
     
     func selectFruit(index: Int) {
         
+        // Se evalua que existan elementos
         guard index >= 0 && index < self.fruits.count else { return }
         
         self.selectedIndex = index
+        // Se indica cual fruta fue seleccionada
         self.selectedFruit = self.fruits[index]
         
     }

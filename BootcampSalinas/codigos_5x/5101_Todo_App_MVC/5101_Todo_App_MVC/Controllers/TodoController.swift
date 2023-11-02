@@ -84,10 +84,8 @@ class TodoController {
         
         if let todo = model.updateTodoTitle(index: index, title: title) {
             
-            updatable?.onTodoUpdated(todo: todo, todos: model.todos)
-            
+            updatable?.onTodoUpdated(todo: todo, todos: model.todos)  
         }
-        
     }
     
     func updateTodoCheck(index: Int, checked: Bool, onTodoUpdated updatable: TodoUpdatable?) {
@@ -95,9 +93,7 @@ class TodoController {
         if let todo = model.updateTodoCheck(index: index, checked: checked){
             
             updatable?.onTodoUpdated(todo: todo, todos: model.todos)
-            
         }
-        
     }
     
     func deleteTodo(index: Int, onTodoDeleted deletable: TodoDeletable?) {
@@ -105,11 +101,6 @@ class TodoController {
         if let todo = model.deleteTodo(index: index) {
             
             deletable?.onTodoDeleted(todo: todo, todos: model.todos)
-            
         }
-        
     }
-    
-    
-    
 }

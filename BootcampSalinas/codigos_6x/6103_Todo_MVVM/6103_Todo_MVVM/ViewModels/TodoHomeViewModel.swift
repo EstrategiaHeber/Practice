@@ -16,12 +16,9 @@ class TodoHomeViewModel {
     var todosSubscriber: AnyCancellable?
     
     init() {
-        
-        self.todosSubscriber = TodoModel.shared.$todos.dropFirst().sink {
-            todos in
+        self.todosSubscriber = TodoModel.shared.$todos.dropFirst().sink { todos in
             self.todos = todos
         }
-        
     }
     
     deinit {
@@ -31,6 +28,14 @@ class TodoHomeViewModel {
     
     func loadTodos() {
         TodoModel.shared.loadTodos()
+    }
+    
+    func selectTodo(index: Int) {
+        TodoModel.shared.selectTodo(index: index)
+    }
+    
+    func eliminarTodos(){
+        TodoModel.shared.deleteTodo()
     }
     
 }

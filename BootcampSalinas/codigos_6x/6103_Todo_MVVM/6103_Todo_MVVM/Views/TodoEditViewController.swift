@@ -6,24 +6,41 @@
 //
 
 import UIKit
+import Combine
 
 class TodoEditViewController: UIViewController {
-
+    
+    var todoEditViewModel = TodoEditViewModel()
+    
+    // Subscriptores
+    var todoSelectSubscriber: AnyCancellable?
+    var todoEditedSubscriber: AnyCancellable?
+    
+    var todoRecibido: TodoEntity?
+    
+    @IBOutlet weak var tareaTextField: UITextField!
+    @IBOutlet weak var checkedSwitch: UISwitch!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        self.todoSelectSubscriber = todoEditViewModel.$todoSelected.sink {  todo in
+            
+            if let todo = todo {
+                //self.todoRecibido = todo
+                self.tareaTextField.text = todo.title
+                self.checkedSwitch.isOn = todo.checked
+            }
+        }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func saveAction(_ sender: Any) {
+        print("peoeoeooeo")
+        if let titulo = tareaTextField.text {
+            self.todoEditViewModel.editTitleTodo(title: titulo)
+        }
+        
+        self.todoEditViewModel.editCheckedTodo(checked: checkedSwitch.isOn)
     }
-    */
-
+    
 }

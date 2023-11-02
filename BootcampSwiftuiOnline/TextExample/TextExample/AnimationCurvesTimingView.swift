@@ -24,6 +24,7 @@ struct AnimationCurvesTimingView: View {
             RoundedRectangle(cornerRadius: 20)
                 .frame(width: isAnimating ? 350 : 50, height: 100)
                 .animation(.linear(duration: timming), value: isAnimating)
+                .offset(x: isEditing ? -10 : 0) 
             
             RoundedRectangle(cornerRadius: 20)
                 .frame(width: isAnimating ? 350 : 50, height: 100)

@@ -24,6 +24,8 @@
 		D8993BC5296C846D00F8CDDA /* TodoApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D8993BC3296C846D00F8CDDA /* TodoApp.xcdatamodeld */; };
 		D8993BC7296C852900F8CDDA /* TodoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8993BC6296C852900F8CDDA /* TodoModel.swift */; };
 		D8993BC9296C94BF00F8CDDA /* TodoAddViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8993BC8296C94BE00F8CDDA /* TodoAddViewModel.swift */; };
+		F33E515C2AEABD0B00C45392 /* TodoDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33E515B2AEABD0A00C45392 /* TodoDetailViewModel.swift */; };
+		F33E515E2AEAE80B00C45392 /* TodoEditViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33E515D2AEAE80B00C45392 /* TodoEditViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,8 @@
 		D8993BC4296C846D00F8CDDA /* TodoApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TodoApp.xcdatamodel; sourceTree = "<group>"; };
 		D8993BC6296C852900F8CDDA /* TodoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoModel.swift; sourceTree = "<group>"; };
 		D8993BC8296C94BE00F8CDDA /* TodoAddViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoAddViewModel.swift; sourceTree = "<group>"; };
+		F33E515B2AEABD0A00C45392 /* TodoDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoDetailViewModel.swift; sourceTree = "<group>"; };
+		F33E515D2AEAE80B00C45392 /* TodoEditViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoEditViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +166,8 @@
 			children = (
 				D8993BBA296C83F200F8CDDA /* TodoHomeViewModel.swift */,
 				D8993BC8296C94BE00F8CDDA /* TodoAddViewModel.swift */,
+				F33E515B2AEABD0A00C45392 /* TodoDetailViewModel.swift */,
+				F33E515D2AEAE80B00C45392 /* TodoEditViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -312,6 +318,8 @@
 				D8993BB6296C836000F8CDDA /* TodoEditViewController.swift in Sources */,
 				D8993BC7296C852900F8CDDA /* TodoModel.swift in Sources */,
 				D8993BB0296C833300F8CDDA /* TodoHomeViewController.swift in Sources */,
+				F33E515C2AEABD0B00C45392 /* TodoDetailViewModel.swift in Sources */,
+				F33E515E2AEAE80B00C45392 /* TodoEditViewModel.swift in Sources */,
 				D8993BB2296C834100F8CDDA /* TodoAddViewController.swift in Sources */,
 				D8993BC5296C846D00F8CDDA /* TodoApp.xcdatamodeld in Sources */,
 				D8993BBB296C83F200F8CDDA /* TodoHomeViewModel.swift in Sources */,

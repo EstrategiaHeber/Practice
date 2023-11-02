@@ -10,7 +10,7 @@ import CoreData
 
 class TodoModel {
     
-    // 1.- Se crea el contenedor.
+    // Se crea el contenedor.
     let persistentContainer: NSPersistentContainer = {
         let container = NSPersistentContainer(name: "TodoApp")
         
@@ -24,15 +24,18 @@ class TodoModel {
         return container
     }()
     
+    // NOTIFICADORES
+    
     // Variable global donde se almacenaran todos los "Todos creados"
     var todos: [TodoEntity] = []
     
     // Variable global que retendra el "Todo" seleccionado
     var todoSelected: TodoEntity?
+    
     // Variable global que retendra el index(posicion) del "Todo" seleccionado
     var todoSelectedIndex: Int?
     
-    
+    // Seleccionar un "todo"
     func selectTodo(index: Int, todo: TodoEntity) {
         self.todoSelected = todo
         self.todoSelectedIndex = index
@@ -48,17 +51,13 @@ class TodoModel {
         if let todos = try? context.fetch(requestTodos) {
             
             self.todos = todos
-            
         }
-        
     }
     
     func getTodo(index: Int) -> TodoEntity? {
-        
+        print("Se obtuvo el todo: \(todos[index])")
         guard index >= 0 && index < self.todos.count else { return nil }
-        
         return self.todos[index]
-        
     }
     
     func addTodo(title: String) -> TodoEntity? {
@@ -82,7 +81,6 @@ class TodoModel {
             context.rollback()
             return nil
         }
-        
     }
     
     func updateTodoTitle(index: Int, title: String) -> TodoEntity? {
@@ -101,11 +99,8 @@ class TodoModel {
             } catch {
                 context.rollback()
             }
-            
         }
-        
         return nil
-        
     }
     
     func updateTodoCheck(index: Int, checked: Bool) -> TodoEntity? {
@@ -146,11 +141,7 @@ class TodoModel {
             } catch {
                 context.rollback()
             }
-            
         }
-        
         return nil
-        
     }
-    
 }
